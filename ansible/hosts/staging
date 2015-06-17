@@ -1,5 +1,5 @@
 [web]
-192.168.50.5
+45.55.220.117
 
 [staging:children]
 web

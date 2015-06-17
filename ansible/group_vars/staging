@@ -1,12 +1,18 @@
 mysql_root_password: stagingpw
 
+github_ssh_keys:
+  - username: ryancanhelpyou
+    authorized:
+      - "{{ web_user }}"
+
 wordpress_sites:
-  example.com:
+  nachc.com:
     site_hosts:
-      - staging.example.com
+      - 45.55.220.117
     local_path: '../site' # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:roots/bedrock.git
+    repo: git@github.com:ryancanhelpyou/roots-example-project.com.git
     branch: master
+    subtree: site
     multisite:
       enabled: false
       subdomains: false

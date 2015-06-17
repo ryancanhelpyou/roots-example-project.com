@@ -1,10 +1,7 @@
 mysql_root_password: B3LkKUpcZVx4bpLXKXpiez%R
 
 github_ssh_keys:
-  - username: swalkinshaw
-    authorized:
-      - "{{ web_user }}"
-  - username: retlehs
+  - username: ryancanhelpyou
     authorized:
       - "{{ web_user }}"
 
@@ -26,7 +23,7 @@ wordpress_sites:
     site_hosts:
       - roots-example-project.com
     local_path: '../site' # path targeting local Bedrock project directory (relative to Ansible root)
-    repo: git@github.com:roots/roots-example-project.com.git
+    repo: git@github.com:ryancanhelpyou/roots-example-project.com.git
     subtree: site
     branch: master
     multisite:
